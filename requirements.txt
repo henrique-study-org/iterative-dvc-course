@@ -1,0 +1,6 @@
+pytest==7.1.*
+pydantic==1.10.2
+pytest-cov==4.0.0
+mypy
+autopep8
+cookiecutter==2.1.1
