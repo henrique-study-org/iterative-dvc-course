@@ -1,0 +1,24 @@
+base:
+  seed: 42
+
+data:
+  dataset_csv: "data/raw/iris.csv"
+
+preprocess:
+  test_size: 0.2
+  featured_dataset: "data/processed/featured_iris.csv"
+  output_trainset: "data/processed/train_iris.csv"
+  output_testset: "data/processed/test_iris.csv"
+
+train:
+  cv: 3
+  output_model: "models/model.joblib"
+  estimator_params:
+    C: 0.001
+    max_iter: 100
+    solver: "lbfgs"
+    multi_class: "multinomial"
+  
+reports:
+  metrics_file: 'reports/metrics.json'
+  confusion_matrix_img: 'reports/confusion_matrix.png'

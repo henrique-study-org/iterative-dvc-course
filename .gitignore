@@ -3,6 +3,12 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# data
+*.csv
+*.parquet*
+*.joblib
+*.pkl
+
 # C extensions
 *.so
 
